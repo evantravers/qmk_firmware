@@ -21,16 +21,12 @@ extern keymap_config_t keymap_config;
 
 enum {
   TD_CTRL_ESC,
-  Q_OR_CMD_ONE,
-  W_OR_CMD_TWO,
-  E_OR_CMD_THREE
+  TD_SHIFT_ENTER,
 };
 
 qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_CTRL_ESC]    = ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_ESC),
-  [Q_OR_CMD_ONE]   = ACTION_TAP_DANCE_DOUBLE(KC_Q, LGUI(KC_1)),
-  [W_OR_CMD_TWO]   = ACTION_TAP_DANCE_DOUBLE(KC_W, LGUI(KC_2)),
-  [E_OR_CMD_THREE] = ACTION_TAP_DANCE_DOUBLE(KC_E, LGUI(KC_3))
+  [TD_SHIFT_ENTER] = ACTION_TAP_DANCE_DOUBLE(KC_RSFT, KC_ENT)
 };
 
 enum planck_layers {
@@ -68,29 +64,32 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = {
   {KC_TAB,          KC_Q,    KC_W,    KC_E,    KC_R,  KC_T,    KC_Y,    KC_U,  KC_I,    KC_O,    KC_P,    KC_BSPC},
   {TD(TD_CTRL_ESC), KC_A,    KC_S,    KC_D,    KC_F,  KC_G,    KC_H,    KC_J,  KC_K,    KC_L,    KC_SCLN, KC_QUOT},
-  {KC_LSFT,         KC_Z,    KC_X,    KC_C,    KC_V,  KC_B,    KC_N,    KC_M,  KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT},
+  {KC_LSFT,         KC_Z,    KC_X,    KC_C,    KC_V,  KC_B,    KC_N,    KC_M,  KC_COMM, KC_DOT,  KC_SLSH, TD(TD_SHIFT_ENTER)},
   {KC_F19,          KC_LCTL, KC_LALT, KC_LGUI, LOWER, KC_SPC,  KC_SPC,  RAISE, KC_RGUI, KC_RALT, KC_RCTL, KC_ENT}
 },
 
 /* Sketch
- * This is an attempt to make some of the shortcuts I use in Sketch.app a
- * a little easier to access w/ one hand, since usually I have a stylus or
- * mouse in the other.
+ * This is an attempt to make some of the shortcuts I use in Sketch.app easier
+ * on a planck/lets split.
+ *
+ * The left hand should handle selection/zooming, and the right hand should
+ * handle moving/aligment.
+ *
  * ,-----------------------------------------------------------------------------------.
- * |      |      |      |      |      |      |      |      |      |      |      |      |
+ * |      | CMD+1| CMD+2| CMD+3|      |      |      |      |      |      |      |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |      |      |      |      |      |
+ * |      |      |      |      |      |      |      |      |      | Up   |      |      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |      |      |      |      |      |
+ * |      |      |      |      |      |      |      |      | Left | Down | Right|      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | Magic|      |      |      |      |      |      |      |      |      |      |
+ * |      |      |      |      |      |      |      |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
  */
 [_SKETCH] = {
-  {_______, TD(Q_OR_CMD_ONE), TD(W_OR_CMD_TWO), TD(E_OR_CMD_THREE), _______, _______, _______, _______, _______, _______, _______, _______},
-  {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______},
-  {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______},
-  {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______}
+  {_______, LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), _______, _______, _______, _______, _______, _______,  _______, _______},
+  {_______, _______,    _______,    _______,    _______, _______, _______, _______, _______, KC_UP,   _______,  _______},
+  {_______, _______,    _______,    _______,    _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______},
+  {_______, _______,    _______,    _______,    _______, _______, _______, _______, _______, _______, _______,  _______}
 },
 
 /* Lower
