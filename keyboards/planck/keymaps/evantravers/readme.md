@@ -13,10 +13,6 @@ Mostly default, except a few new things:
 
 - [current layout](http://www.keyboard-layout-editor.com/#/gists/1bcd477effdc9d202ee865b4e2a0b153)
 
-## Problems
-
-- Current sketch layer makes me switch back and forth constantly
-
 ## TODO
 
 - [/] Use ctrl-j for enter
@@ -24,9 +20,8 @@ Mostly default, except a few new things:
 - [ ] Work on Sketch/Design specific layer:
     - [list](http://sketchshortcuts.com/)
     - [map](https://v1.designcode.io/sketch-keyboard)
-    - [X] It may be as simple as making the left cntrl be both CMD+Raise layer, then I can get to my zooms with one hand.
-    - [X] I am using double tap for the zoom keys now... I like it!
-    - [ ] needs to preferably be useable with a let's split: manipulation on left hand, movement/alignment in right hand, to match what my hands do.
-        - Need to have a convenient move mode: arrow keys and modifiers... maybe some alignment stuff in the right hand.
-    - [ ] RGB to highlight the new arrow keys and different macros? (https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgblight.md)
+    - Missing shortcuts:
+        - CMD+1-3
+        - Easy arrow keys in right hand, w/ access to modifiers
+        - Maybe somehow access to the pin controls on the arrow keys?
 - [ ] Use both spaces for return?
