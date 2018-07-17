@@ -15,13 +15,16 @@ Mostly default, except a few new things:
 
 ## TODO
 
+- [ ] Split spacebar:
+    - https://docs.qmk.fm/#/feature_advanced_keycodes?id=mod-tap
+    - Maybe shift/ctrl, or maybe put an enter there?
 - [/] Use ctrl-j for enter
 - [/] Use ctrl-i for tab
 - [ ] Work on Sketch/Design specific layer:
     - [list](http://sketchshortcuts.com/)
     - [map](https://v1.designcode.io/sketch-keyboard)
     - Missing shortcuts:
-        - CMD+1-3
+        - [X] CMD+1-3
         - Easy arrow keys in right hand, w/ access to modifiers
         - Maybe somehow access to the pin controls on the arrow keys?
 - [ ] Use both spaces for return?
