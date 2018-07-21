@@ -22,14 +22,13 @@
 #define CTRL_ESC  TD(TD_CTRL_ESC)
 #define SFT_ENTER TD(TD_SHIFT_ENTER)
 #define TAB_SK    LT(_SKETCH, KC_TAB)
+#define SCRNSHT   LSFT(LGUI(KC_4))
 
 extern keymap_config_t keymap_config;
 
 enum {
   TD_CTRL_ESC,
   TD_SHIFT_ENTER,
-  TD_RAISE,
-  TD_LOWER,
 };
 
 enum planck_layers {
@@ -43,9 +42,7 @@ enum planck_layers {
 
 qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_CTRL_ESC]    = ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_ESC),
-  [TD_SHIFT_ENTER] = ACTION_TAP_DANCE_DOUBLE(KC_RSFT, KC_ENT),
-  [TD_RAISE]       = ACTION_TAP_DANCE_DOUBLE(MO(_RAISE), MO(_SKETCH)),
-  [TD_LOWER]       = ACTION_TAP_DANCE_DOUBLE(MO(_LOWER), MO(_SKETCH)),
+  [TD_SHIFT_ENTER] = ACTION_TAP_DANCE_DOUBLE(KC_RSFT, KC_ENT)
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -105,9 +102,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_SKETCH] = {
   {_______, LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), LGUI(KC_4), LGUI(KC_5), _______, _______, KC_UP,   _______,  _______, _______},
-  {_______, _______,    LSFT(LGUI(KC_4)),  _______,    _______, _______, _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______, _______},
-  {_______, _______,    _______,    _______,    _______, _______, _______, _______, _______, _______,  _______, _______},
-  {_______, _______,    _______,    _______,    _______, _______, _______, _______, _______, _______,  _______, _______}
+  {_______, _______,    SCRNSHT,    _______,    _______,    _______,    _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______, _______},
+  {_______, _______,    _______,    _______,    _______,    _______,    _______, _______, _______, _______,  _______, _______},
+  {_______, _______,    _______,    _______,    _______,    _______,    _______, _______, _______, _______,  _______, _______}
 },
 
 /* Lower
