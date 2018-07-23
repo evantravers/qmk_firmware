@@ -23,6 +23,8 @@
 #define SFT_ENTER TD(TD_SHIFT_ENTER)
 #define TAB_SK    LT(_SKETCH, KC_TAB)
 #define SCRNSHT   LSFT(LGUI(KC_4))
+#define ZOOMIN    LGUI(KC_PLUS)
+#define ZOOMOUT   LGUI(KC_MINS)
 
 extern keymap_config_t keymap_config;
 
@@ -93,7 +95,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |      | CMD+1| CMD+2| CMD+3| CMD+4| CMD+5|      |      |      | Up   |      |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |      |SCRST |      |      |      |      |      | Left | Down | Right|      |
+ * |      |      |SCRST |      | ZOOM-| ZOOM+|      |      | Left | Down | Right|      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |      |      |      |      |      |      |      |      |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -102,7 +104,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_SKETCH] = {
   {_______, LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), LGUI(KC_4), LGUI(KC_5), _______, _______, KC_UP,   _______,  _______, _______},
-  {_______, _______,    SCRNSHT,    _______,    _______,    _______,    _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______, _______},
+  {_______, _______,    SCRNSHT,    ZOOMOUT,    ZOOMIN,     _______,    _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______, _______},
   {_______, _______,    _______,    _______,    _______,    _______,    _______, _______, _______, _______,  _______, _______},
   {_______, _______,    _______,    _______,    _______,    _______,    _______, _______, _______, _______,  _______, _______}
 },
