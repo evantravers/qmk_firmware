@@ -8,8 +8,7 @@ My customizations:
 - I use a hyper-key setup through hammerspoon, so I've got an F19 key to enable
   that.
 - I use GUI+[1-5] for various OSX shortcuts (sketch, switching tabs, taking
-  screenshots) so there's a secret layer for that. (Currently called sketch,
-  might rename)
+  screenshots) so there's a secret layer for that. 
 - I am used to using both hands for mods, so I've got mods on both sides (hence
   the name fullmods)
 
@@ -20,10 +19,4 @@ My customizations:
 ## TODO
 
 - Use the space bars as modifiers?
-- Use the Right hyper for sketch/macro layer?
 - Use the layer buttons as enter keys?
-- [ ] Work on Sketch/Design specific layer:
-    - [list](http://sketchshortcuts.com/)
-    - [map](https://v1.designcode.io/sketch-keyboard)
-    - Missing shortcuts:
-        - Maybe somehow access to the pin controls on the arrow keys?
