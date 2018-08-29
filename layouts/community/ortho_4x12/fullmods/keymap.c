@@ -9,6 +9,7 @@
 #define ZOOMIN    LGUI(KC_PLUS)
 #define ZOOMOUT   LGUI(KC_MINS)
 #define SW_WIND   LGUI(KC_GRV)
+#define SCRNST    LGUI(LSFT(LCTL(KC_4)))
 
 extern keymap_config_t keymap_config;
 
@@ -77,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |      | CMD+1| CMD+2| CMD+3| CMD+4| CMD+5|      |      |  7   |  8   |  9   |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |      |      |      | ZOOM-| ZOOM+|      |      |  4   |  5   |  6   |      |
+ * |      |      |SCRNST|      | ZOOM-| ZOOM+|      |      |  4   |  5   |  6   |      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |      |      |      |      |      |      |      |  1   |  2   |  3   | Tab  |
  * |------+------+------+------+------+------+------+------+------+------+------+------+
@@ -86,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_SHORTCUTS] = LAYOUT_ortho_4x12(
   _______, LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), LGUI(KC_4), LGUI(KC_5), _______, _______, KC_7, KC_8,    KC_9,    _______,
-  SW_WIND, _______,    _______,    ZOOMOUT,    ZOOMIN,     _______,    _______, _______, KC_4, KC_5,    KC_6,    _______,
+  SW_WIND, _______,    SCRNST,     ZOOMOUT,    ZOOMIN,     _______,    _______, _______, KC_4, KC_5,    KC_6,    _______,
   _______, _______,    _______,    _______,    _______,    _______,    _______, _______, KC_1, KC_2,    KC_3,    KC_TAB,
   _______, _______,    _______,    _______,    _______,    _______,    _______, _______, KC_0, KC_DOT,  _______, _______
 ),
