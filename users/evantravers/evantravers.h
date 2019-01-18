@@ -26,7 +26,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SHORTCUTS MO(_SHORTCUTS)
 #define CTRL_ESC  TD(TD_CTRL_ESC)
 #define TAB_SK    LT(_SHORTCUTS, KC_TAB)
-#define GAME_TAB  LT(_GAMING_SHORTCUTS, KC_TAB)
 #define ZOOMIN    LGUI(KC_PLUS)
 #define ZOOMOUT   LGUI(KC_MINS)
 #define SW_WIND   LGUI(KC_GRV)
@@ -42,8 +41,6 @@ enum userspace_layers {
   _LOWER,
   _RAISE,
   _SHORTCUTS,
-  _GAMING,
-  _GAMING_SHORTCUTS,
   _ADJUST
 };
 
