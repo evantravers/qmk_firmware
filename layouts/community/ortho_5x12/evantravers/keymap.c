@@ -109,13 +109,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   )
 
 };
-
-void matrix_init_keymap(void) {
-#ifdef KEYBOARD_fractal
-    setPinOutput(D5);
-    writePinHigh(D5);
-
-    setPinOutput(B0);
-    writePinHigh(B0);
-#endif
-}
