@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TAB_SK,   _________________QWERTY_L1_________________, _________________QWERTY_R1_________________, KC_BSPC,
     CTRL_ESC, _________________QWERTY_L2_________________, _________________QWERTY_R2_________________, KC_QUOT,
     KC_LSFT,  _________________QWERTY_L3_________________, _________________QWERTY_R3_________________, KC_SFTENT,
-    KC_F19,   KC_LCTL, KC_LALT, KC_LGUI, LOWER, KC_SPC,     KC_SPC, RAISE, KC_RGUI, KC_RALT, KC_RCTL,     SHORTCUTS
+    KC_F19,   KC_LCTL, KC_LALT, KC_LGUI, LOWER, KC_SPC,    KC_SPC, RAISE, KC_RGUI, KC_RALT, KC_RCTL,    SHORTCUTS
   ),
 
   [_LOWER] = LAYOUT_ortho_4x12_wrapper(
