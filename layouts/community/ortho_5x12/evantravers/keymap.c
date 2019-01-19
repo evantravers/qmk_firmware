@@ -1,6 +1,6 @@
 /* Copyright 2015-2017 Jack Humbert
  * Modified by KeyPCB for the Fractal keyboard
- * Backlight isn't on the Fractal, so I've removed the keycode from the keymaps
+ * Modified by @evantravers for preonic
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
