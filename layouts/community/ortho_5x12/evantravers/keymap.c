@@ -37,7 +37,7 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-  [_QWERTY] = LAYOUT_ortho_5x12_base_wrapper(
+  [_QWERTY] = LAYOUT_ortho_5x12_base_wrapper( \
     ________________NUMBER_LEFT________________, ________________NUMBER_RIGHT_______________,
     _________________QWERTY_L1_________________, _________________QWERTY_R1_________________,
     _________________QWERTY_L2_________________, _________________QWERTY_R2_________________,
