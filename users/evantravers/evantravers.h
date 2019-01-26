@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SHORTCUTS MO(_SHORTCUTS)
 #define CTRL_ESC  TD(TD_CTRL_ESC)
 #define TAB_SK    LT(_SHORTCUTS, KC_TAB)
-#define TAB_GAM   LT(_GAMING_SHORTCUTS, KC_TAB)
+#define G_LOWER   LT(_GAMING_SHORTCUTS, KC_SPC)
 #define ZOOMIN    LGUI(KC_PLUS)
 #define ZOOMOUT   LGUI(KC_MINS)
 #define SW_WIND   LGUI(KC_GRV)
