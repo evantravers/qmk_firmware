@@ -57,3 +57,5 @@
 #define _________________ADJUST_R1_________________        RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD
 #define _________________ADJUST_R2_________________        _______, _______, _______, _______, _______
 #define _________________ADJUST_R3_________________        MI_OFF, TERM_ON, TERM_OFF, _______, _______
+
+#define ______________MUSIC_______________                 KC_MPLY, KC_VOLD, KC_VOLU, PREV_NEXT
