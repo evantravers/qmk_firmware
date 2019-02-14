@@ -31,9 +31,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ZOOMOUT   LGUI(KC_MINS)
 #define SW_WIND   LGUI(KC_GRV)
 #define SCRNST    LGUI(LSFT(LCTL(KC_4)))
+#define PREV_NEXT TD(TD_PREV_NEXT)
 
 enum {
-  TD_CTRL_ESC
+  TD_CTRL_ESC,
+  TD_PREV_NEXT
 };
 
 /* Define layer names */
@@ -49,5 +51,6 @@ enum userspace_layers {
 
 qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_CTRL_ESC]    = ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_ESC),
+  [TD_PREV_NEXT]   = ACTION_TAP_DANCE_DOUBLE(KC_MNXT, KC_MPRV)
 };
 
