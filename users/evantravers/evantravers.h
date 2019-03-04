@@ -51,6 +51,6 @@ enum userspace_layers {
 
 qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_CTRL_ESC]    = ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_ESC),
-  [TD_PREV_NEXT]   = ACTION_TAP_DANCE_DOUBLE(KC_MNXT, KC_MPRV)
+  [TD_PREV_NEXT]   = ACTION_TAP_DANCE_DOUBLE(KC_MFFD, KC_MRWD)
 };
 
