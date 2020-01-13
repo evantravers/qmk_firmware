@@ -1,6 +1,6 @@
 #pragma once
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 135
 #define IGNORE_MOD_TAP_INTERRUPT
 #define PERMISSIVE_HOLD
 #define PREVENT_STUCK_MODIFIERS
