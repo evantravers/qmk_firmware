@@ -8,7 +8,7 @@
 #if defined(KEYBOARD_planck_rev6)
 #    define TAPPING_TERM 185
 #else
-#    define TAPPING_TERM 135
+#    define TAPPING_TERM 155
 #endif
 
 #define IGNORE_MOD_TAP_INTERRUPT
