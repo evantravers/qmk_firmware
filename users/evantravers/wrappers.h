@@ -31,8 +31,8 @@
 
 
 #define _________________LOWER_L1__________________        KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC
-#define _________________LOWER_L2__________________        _________________FUNC_LEFT_________________
-#define _________________LOWER_L3__________________        _________________FUNC_RIGHT________________
+#define _________________LOWER_L2__________________        KC_LBRC, KC_RBRC, KC_LPRN, KC_RPRN, _______
+#define _________________LOWER_L3__________________        _______, _______, KC_LCBR, KC_RCBR, _______
 
 #define _________________LOWER_R1__________________        KC_CIRC, KC_AMPR,    KC_ASTR,     KC_LPRN, KC_RPRN
 #define _________________LOWER_R2__________________        _______, KC_UNDS,    KC_PLUS,     KC_LCBR, KC_RCBR
@@ -41,14 +41,13 @@
 
 
 #define _________________RAISE_L1__________________        ________________NUMBER_LEFT________________
-#define _________________RAISE_L2__________________        ___________________BLANK___________________
-#define _________________RAISE_L3__________________        ___________________BLANK___________________
+#define _________________RAISE_L2__________________        _________________FUNC_LEFT_________________
+#define _________________RAISE_L3__________________        _________________FUNC_RIGHT________________
+
 
 #define _________________RAISE_R1__________________        ________________NUMBER_RIGHT_______________
-#define _________________RAISE_R2__________________        _______, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC
-#define _________________RAISE_R3__________________        _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT
-
-
+#define _________________RAISE_R2__________________        _______, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC
+#define _________________RAISE_R3__________________        KC_LEFT, KC_DOWN, KC_UP,  KC_RIGHT, _______
 
 #define _________________ADJUST_L1_________________        RESET,   DEBUG,  RGB_TOG, RGB_MOD, RGB_HUI
 #define _________________ADJUST_L2_________________        _______, MU_MOD, AU_ON,   AU_OFF,  _______
@@ -59,3 +58,27 @@
 #define _________________ADJUST_R3_________________        MI_OFF, TERM_ON, TERM_OFF, _______, _______
 
 #define ______________MUSIC_______________                 KC_MPLY, KC_VOLD, KC_VOLU, PREV_NEXT
+
+#define QEND_L1 TAB_SK
+#define QEND_L2 CTRL_ESC
+#define QEND_L3 KC_LSFT
+
+#define QEND_R1 KC_BSPC
+#define QEND_R2 KC_QUOT
+#define QEND_R3 KC_SFTENT
+
+#define REND_L1 KC_GRV
+#define REND_L2 KC_ESC
+#define REND_L3 _______
+
+#define REND_R1 _______
+#define REND_R2 KC_BSLS
+#define REND_R3 _______
+
+#define LEND_L1 KC_TILD
+#define LEND_L2 KC_CAPS
+#define LEND_L3 _______
+
+#define LEND_R1 _______
+#define LEND_R2 KC_PIPE
+#define LEND_R3 _______
