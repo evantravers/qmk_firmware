@@ -2,13 +2,15 @@
 
 // TAPPING_TERM
 #ifdef TAPPING_TERM
-#    undef TAPPING_TERM
+#  undef TAPPING_TERM
 #endif
 
 #if defined(KEYBOARD_planck_rev6)
-#    define TAPPING_TERM 185
+#  define TAPPING_TERM 185
+#elif defined(KEYBOARD_kyria_rev1)
+#  define TAPPING_TERM 150
 #else
-#    define TAPPING_TERM 155
+#  define TAPPING_TERM 200
 #endif
 
 #define IGNORE_MOD_TAP_INTERRUPT
