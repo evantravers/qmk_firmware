@@ -10,10 +10,10 @@ extern keymap_config_t keymap_config;
     K21, K22, K23, K24, K25, K26, K27, K28, K29, K2A  \
   ) \
   LAYOUT_ortho_4x12_wrapper( \
-    TAB_SK,   K01,     K02,     K03,     K04,   K05,    K06,    K07,   K08,     K09,     K0A,     KC_BSPC, \
-    CTRL_ESC, K11,     K12,     K13,     K14,   K15,    K16,    K17,   K18,     K19,     K1A,     KC_QUOT, \
-    KC_LSFT,  K21,     K22,     K23,     K24,   K25,    K26,    K27,   K28,     K29,     K2A,     KC_SFTENT, \
-    KC_F19,   KC_LCTL, KC_LALT, KC_LGUI, LOWER, KC_SPC, KC_SPC, RAISE, KC_RGUI, KC_RALT, KC_RCTL, SHORTCUTS \
+    _______, K01,     K02,     K03,     K04,     K05,     K06,     K07,     K08,     K09,     K0A,     _______, \
+    _______, K11,     K12,     K13,     K14,     K15,     K16,     K17,     K18,     K19,     K1A,     _______, \
+    _______, K21,     K22,     K23,     K24,     K25,     K26,     K27,     K28,     K29,     K2A,     _______, \
+    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ \
   )
 #define LAYOUT_ortho_4x12_base_wrapper(...)       LAYOUT_ortho_4x12_base(__VA_ARGS__)
 
@@ -32,23 +32,23 @@ extern keymap_config_t keymap_config;
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_ortho_4x12_wrapper(
-    TAB_SK,   _________________QWERTY_L1_________________, _________________QWERTY_R1_________________, KC_BSPC,
-    CTRL_ESC, _________________QWERTY_L2_________________, _________________QWERTY_R2_________________, KC_QUOT,
-    KC_LSFT,  _________________QWERTY_L3_________________, _________________QWERTY_R3_________________, KC_SFTENT,
-    KC_F19,   KC_LCTL, KC_LALT, KC_LGUI, LOWER, KC_SPC,    KC_SPC, RAISE, KC_RGUI, KC_RALT, KC_RCTL,    SHORTCUTS
+    QEND_L1, _________________QWERTY_L1_________________, _________________QWERTY_R1_________________, QEND_R1,
+    QEND_L2, _________________QWERTY_L2_________________, _________________QWERTY_R2_________________, QEND_R2,
+    QEND_L3, _________________QWERTY_L3_________________, _________________QWERTY_R3_________________, QEND_R3,
+    KC_F19,  KC_LCTL, KC_LALT, KC_LGUI, LOWER, KC_SPC,    KC_SPC, RAISE, KC_RGUI, KC_RALT, KC_RCTL,    SHORTCUTS
   ),
 
   [_LOWER] = LAYOUT_ortho_4x12_wrapper(
-    KC_TILD, _________________LOWER_L1__________________, _________________LOWER_R1__________________, _______,
-    KC_CAPS, _________________LOWER_L2__________________, _________________LOWER_R2__________________, KC_PIPE,
-    _______, _________________LOWER_L3__________________, _________________LOWER_R3__________________, _______,
+    LEND_L1, _________________LOWER_L1__________________, _________________LOWER_R1__________________, LEND_R1,
+    LEND_L2, _________________LOWER_L2__________________, _________________LOWER_R2__________________, LEND_R2,
+    LEND_L3, _________________LOWER_L3__________________, _________________LOWER_R3__________________, LEND_R3,
     _______, _______, _______, _______, _______, _______, _______, _______, ______________MUSIC_______________
   ),
 
   [_RAISE] = LAYOUT_ortho_4x12_wrapper(
-    KC_GRV,  _________________RAISE_L1__________________, _________________RAISE_R1__________________, _______,
-    KC_ESC,  _________________RAISE_L2__________________, _________________RAISE_R2__________________, KC_BSLS,
-    _______, _________________RAISE_L3__________________, _________________RAISE_R3__________________, _______,
+    REND_L1, _________________RAISE_L1__________________, _________________RAISE_R1__________________, REND_R1,
+    REND_L2, _________________RAISE_L2__________________, _________________RAISE_R2__________________, REND_R2,
+    REND_L3, _________________RAISE_L3__________________, _________________RAISE_R3__________________, REND_R3,
     _______, _______, _______, _______, _______, _______, _______, _______, ______________MUSIC_______________
   ),
 
