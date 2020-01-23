@@ -32,7 +32,7 @@
 
 #define _________________LOWER_L1__________________        KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC
 #define _________________LOWER_L2__________________        KC_LBRC, KC_RBRC, KC_LPRN, KC_RPRN, _______
-#define _________________LOWER_L3__________________        _______, _______, KC_LCBR, KC_RCBR, _______
+#define _________________LOWER_L3__________________        KC_PIPE, _______, KC_LT,   KC_GT,   _______
 
 #define _________________LOWER_R1__________________        KC_CIRC, KC_AMPR,    KC_ASTR,     KC_LPRN, KC_RPRN
 #define _________________LOWER_R2__________________        _______, KC_UNDS,    KC_PLUS,     KC_LCBR, KC_RCBR
