@@ -19,6 +19,7 @@
 #define _________________FUNC_RIGHT________________        KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10
 #define ___________________BLANK___________________        _______, _______, _______, _______, _______
 #define ______________MUSIC_______________                 KC_MPLY, KC_VOLD, KC_VOLU, PREV_NEXT
+#define ______________ARROWS______________                 KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT
 
 
 
@@ -32,13 +33,13 @@
 
 
 
-#define _________________LOWER_L1__________________        KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC
-#define _________________LOWER_L2__________________        KC_LBRC, KC_RBRC, KC_LPRN, KC_RPRN, _______
-#define _________________LOWER_L3__________________        _______, _______, KC_LT,   KC_GT,   _______
+#define _________________LOWER_L1__________________        KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE
+#define _________________LOWER_L2__________________        KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV
+#define _________________LOWER_L3__________________        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
 
-#define _________________LOWER_R1__________________        KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN
-#define _________________LOWER_R2__________________        _______, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR
-#define _________________LOWER_R3__________________        _______, KC_PIPE, KC_COLN, KC_HOME, KC_END
+#define _________________LOWER_R1__________________        KC_QUES, KC_UNDS, KC_LT,   KC_GT,   KC_BSLS
+#define _________________LOWER_R2__________________        KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, KC_COLN
+#define _________________LOWER_R3__________________        KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  KC_SLSH
 
 
 
@@ -47,8 +48,8 @@
 #define _________________RAISE_L3__________________        _________________FUNC_RIGHT________________
 
 #define _________________RAISE_R1__________________        ________________NUMBER_RIGHT_______________
-#define _________________RAISE_R2__________________        _______, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC
-#define _________________RAISE_R3__________________        KC_LEFT, KC_DOWN, KC_UP,  KC_RIGHT, _______
+#define _________________RAISE_R2__________________        ______________ARROWS______________, _______
+#define _________________RAISE_R3__________________        _______, ______________MUSIC_______________
 
 
 
