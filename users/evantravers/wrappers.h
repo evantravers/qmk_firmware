@@ -29,7 +29,7 @@
 
 #define _________________QWERTY_R1_________________        KC_Y,    KC_U,    KC_I,    KC_O,    KC_P
 #define _________________QWERTY_R2_________________        KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN
-#define _________________QWERTY_R3_________________        KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLASH
+#define _________________QWERTY_R3_________________        KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH
 
 
 
@@ -37,9 +37,9 @@
 #define _________________LOWER_L2__________________        KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV
 #define _________________LOWER_L3__________________        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
 
-#define _________________LOWER_R1__________________        KC_QUES, KC_UNDS, KC_LT,   KC_GT,   KC_BSLS
-#define _________________LOWER_R2__________________        KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, KC_COLN
-#define _________________LOWER_R3__________________        KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  KC_SLSH
+#define _________________LOWER_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, KC_BSLS
+#define _________________LOWER_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, KC_COLN
+#define _________________LOWER_R3__________________        KC_AMPR, KC_EQL,  KC_LT,   KC_GT,   KC_QUES
 
 
 
