@@ -39,7 +39,7 @@
 
 #define _________________LOWER_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, KC_BSLS
 #define _________________LOWER_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, KC_COLN
-#define _________________LOWER_R3__________________        KC_AMPR, KC_EQL,  KC_LT,   KC_GT,   _______
+#define _________________LOWER_R3__________________        KC_AMPR, KC_UNDS, KC_LT,   KC_GT,   _______
 
 
 
