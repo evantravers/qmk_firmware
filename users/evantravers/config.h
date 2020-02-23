@@ -8,7 +8,7 @@
 #if defined(KEYBOARD_planck_rev6)
 #  define TAPPING_TERM 185
 #elif defined(KEYBOARD_kyria_rev1)
-#  define TAPPING_TERM 150
+#  define TAPPING_TERM 140
 #else
 #  define TAPPING_TERM 200
 #endif

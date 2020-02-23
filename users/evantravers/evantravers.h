@@ -22,8 +22,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "eeprom.h"
 #include "wrappers.h"
 
-#define LOWER     MO(_LOWER)
-#define RAISE     MO(_RAISE)
+#define LOWER     LT(_LOWER, KC_SPC)
+#define RAISE     LT(_RAISE, KC_SPC)
 #define SHORTCUTS MO(_SHORTCUTS)
 #define CTRL_ESC  TD(TD_CTRL_ESC)
 #define TAB_SK    LT(_SHORTCUTS, KC_TAB)
