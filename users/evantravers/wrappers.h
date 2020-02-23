@@ -38,8 +38,8 @@
 #define _________________LOWER_L3__________________        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
 
 #define _________________LOWER_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, KC_BSLS
-#define _________________LOWER_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, KC_COLN
-#define _________________LOWER_R3__________________        KC_AMPR, KC_UNDS, KC_LT,   KC_GT,   _______
+#define _________________LOWER_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, KC_DQUO
+#define _________________LOWER_R3__________________        KC_AMPR, KC_QUES, KC_LT,   KC_GT,   _______
 
 
 
@@ -48,7 +48,7 @@
 #define _________________RAISE_L3__________________        _________________FUNC_RIGHT________________
 
 #define _________________RAISE_R1__________________        ________________NUMBER_RIGHT_______________
-#define _________________RAISE_R2__________________        ______________ARROWS______________, _______
+#define _________________RAISE_R2__________________        ______________ARROWS______________, KC_QUOT
 #define _________________RAISE_R3__________________        _______, ______________MUSIC_______________
 
 
