@@ -30,6 +30,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAB_GAM   LT(_GAMING_SHORTCUTS, KC_TAB)
 #define ZOOMIN    LGUI(KC_PLUS)
 #define ZOOMOUT   LGUI(KC_MINS)
+#define TABN      LSFT(LGUI(KC_LBRC))
+#define TABP      LSFT(LGUI(KC_RBRC))
 #define SW_WIND   LGUI(KC_GRV)
 #define SCRNST    LGUI(LSFT(LCTL(KC_4)))
 #define PREV_NEXT TD(TD_PREV_NEXT)
