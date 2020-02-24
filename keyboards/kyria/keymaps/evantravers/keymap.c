@@ -26,11 +26,6 @@
  * of use. K## is a placeholder to pass through the individual keycodes
  */
 
-#define ALT_ESC MT(MOD_LALT, KC_ESC)
-#define ALT_ENT MT(MOD_RALT, KC_ENT)
-#define GUI_BSPC MT(MOD_LGUI, KC_BSPC)
-#define GUI_DEL MT(MOD_RGUI, KC_DEL)
-
 // clang-format off
 #define LAYOUT_kyria_base( \
     K01, K02, K03, K04, K05, K06, K07, K08, K09, K0A, \
