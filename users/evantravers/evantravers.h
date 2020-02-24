@@ -36,6 +36,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SCRNST    LGUI(LSFT(LCTL(KC_4)))
 #define PREV_NEXT TD(TD_PREV_NEXT)
 
+#define ALT_ESC   MT(MOD_LALT, KC_ESC)
+#define ALT_ENT   MT(MOD_RALT, KC_ENT)
+#define GUI_BSPC  MT(MOD_LGUI, KC_BSPC)
+#define GUI_DEL   MT(MOD_RGUI, KC_DEL)
+
 enum {
   TD_CTRL_ESC,
   TD_PREV_NEXT
