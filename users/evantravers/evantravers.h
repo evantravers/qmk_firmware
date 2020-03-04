@@ -40,6 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ALT_ENT   MT(MOD_RALT, KC_ENT)
 #define GUI_BSPC  MT(MOD_LGUI, KC_BSPC)
 #define GUI_DEL   MT(MOD_RGUI, KC_DEL)
+#define PASS      LGUI(KC_BSLS)
 
 enum {
   TD_CTRL_ESC,
