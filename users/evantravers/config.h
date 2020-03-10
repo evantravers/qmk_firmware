@@ -5,13 +5,7 @@
 #  undef TAPPING_TERM
 #endif
 
-#if defined(KEYBOARD_planck_rev6)
-#  define TAPPING_TERM 185
-#elif defined(KEYBOARD_kyria_rev1)
-#  define TAPPING_TERM 140
-#else
-#  define TAPPING_TERM 200
-#endif
+#define TAPPING_TERM 140
 
 #define IGNORE_MOD_TAP_INTERRUPT
 #define PREVENT_STUCK_MODIFIERS
