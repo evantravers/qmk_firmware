@@ -129,9 +129,6 @@ static void render_status(void) {
         case _SHORTCUTS:
             oled_write_P(PSTR("Shortcuts\n"), false);
             break;
-        case _GAMING:
-            oled_write_P(PSTR("Gaming\n"), false);
-            break;
         default:
             oled_write_P(PSTR("Undefined\n"), false);
     }
