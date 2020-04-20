@@ -63,11 +63,9 @@
 
 
 
-#define _______________SHORTCUTS_L1________________        KC_1,    KC_2,    KC_3,    KC_4,    KC_5
-#define _______________SHORTCUTS_L2________________        SW_WIND, SCRNST,  ZOOMOUT, ZOOMIN,  _______
-#define _______________SHORTCUTS_L3________________        _______, _______, TABN,    TABP,    _______
-
-
+#define _______________SHORTCUTS_L1________________        KC_1,    KC_2,    KC_3, KC_4,    KC_5
+#define _______________SHORTCUTS_L2________________        SW_WIND, SCRNST,  HBCK, ZOOMIN,  TABN
+#define _______________SHORTCUTS_L3________________        _______, _______, HFWD, ZOOMOUT, TABP
 
 #define QEND_L1 TAB_SK
 #define QEND_L2 CTRL_ESC
