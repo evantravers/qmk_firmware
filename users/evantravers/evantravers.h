@@ -36,12 +36,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SW_WIND   LGUI(KC_GRV)
 #define SCRNST    TD(TD_SCRNST)
 #define PREV_NEXT TD(TD_PREV_NEXT)
-
-#define ALT_ESC   MT(MOD_LALT, KC_ESC)
-#define ALT_ENT   MT(MOD_RALT, KC_ENT)
-#define GUI_BSPC  MT(MOD_LGUI, KC_BSPC)
-#define GUI_DEL   MT(MOD_RGUI, KC_DEL)
 #define PASS      LGUI(KC_BSLS)
+
+#define ALT_ESC   LALT_T(KC_ESC)
+#define ALT_ENT   RALT_T(KC_ENT)
+#define GUI_BSPC  LGUI_T(KC_BSPC)
+#define GUI_DEL   RGUI_T(KC_DEL)
+#define LSHFT     LSFT_T(KC_TAB)
+#define RSHFT     RSFT_T(KC_COLON)
 
 enum {
   TD_CTRL_ESC,
