@@ -33,10 +33,10 @@
     K21, K22, K23, K24, K25, K26, K27, K28, K29, K2A  \
   ) \
   LAYOUT_wrapper( \
-      TAB_SK,   K01, K02, K03, K04, K05,                                          K06, K07, K08, K09, K0A, KC_BSPC, \
-      CTRL_ESC, K11, K12, K13, K14, K15,                                          K16, K17, K18, K19, K1A, KC_QUOT, \
-      KC_F19,   K21, K22, K23, K24, K25,     KC_LSFT, GUI_BSPC, GUI_DEL, KC_RSFT, K26, K27, K28, K29, K2A, SHORTCUTS, \
-                _______,  KC_TAB,  KC_LCTRL, LOWER,   ALT_ESC,  ALT_ENT, RAISE ,  KC_RCTRL, _______, _______ \
+      TAB_SK,   K01, K02, K03, K04, K05,                                 K06, K07, K08, K09, K0A, KC_BSPC, \
+      CTRL_ESC, K11, K12, K13, K14, K15,                                 K16, K17, K18, K19, K1A, KC_QUOT, \
+      KC_F19,   K21, K22, K23, K24, K25,  LOWER, KC_BSPC, KC_DEL, RAISE, K26, K27, K28, K29, K2A, SHORTCUTS, \
+                _______,  KC_F19, KC_ESC, LOWER, KC_TAB,  KC_ENT, RAISE, KC_DEL, KC_F19, _______ \
     )
 
 /* Re-pass though to allow templates to be used */
