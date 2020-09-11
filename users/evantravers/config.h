@@ -3,10 +3,10 @@
 // TAPPING_TERM
 #ifdef TAPPING_TERM
 #  undef TAPPING_TERM
+#  define TAPPING_TERM 100
 #endif
 
 // miryoku style
-#define TAPPING_TERM 200
 #define IGNORE_MOD_TAP_INTERRUPT
 #define TAPPING_FORCE_HOLD
 
