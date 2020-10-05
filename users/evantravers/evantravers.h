@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "eeprom.h"
 #include "wrappers.h"
 
-#define LOWER     LT(_LOWER, KC_SPC)
+#define LOWER     LT(_LOWER, KC_BSPC)
 #define RAISE     LT(_RAISE, KC_SPC)
 #define SHORTCUTS MO(_SHORTCUTS)
 #define CTRL_ESC  TD(TD_CTRL_ESC)
