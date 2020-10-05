@@ -12,7 +12,7 @@
 #define LAYOUT_ortho_4x12_wrapper(...)       LAYOUT_ortho_4x12(__VA_ARGS__)
 
 
-#define ______LH_THUMBS______                              KC_ESC, LOWER, KC_TAB
+#define ______LH_THUMBS______                              KC_ESC, LOWER, TAB_SK
 #define ______RH_THUMBS______                              KC_ENT, RAISE, KC_BSPC
 #define ________________NUMBER_LEFT________________        KC_1,    KC_2,    KC_3,    KC_4,    KC_5
 #define ________________NUMBER_RIGHT_______________        KC_6,    KC_7,    KC_8,    KC_9,    KC_0
