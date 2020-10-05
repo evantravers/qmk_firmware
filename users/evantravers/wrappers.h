@@ -13,7 +13,7 @@
 
 
 #define ______LH_THUMBS______                              KC_ESC, LOWER, TAB_SK
-#define ______RH_THUMBS______                              KC_ENT, RAISE, KC_BSPC
+#define ______RH_THUMBS______                              KC_ENT, RAISE, KC_QUOT
 #define ________________NUMBER_LEFT________________        KC_1,    KC_2,    KC_3,    KC_4,    KC_5
 #define ________________NUMBER_RIGHT_______________        KC_6,    KC_7,    KC_8,    KC_9,    KC_0
 #define _________________FUNC_LEFT_________________        KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5
@@ -39,7 +39,7 @@
 #define _________________LOWER_L3__________________        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
 
 #define _________________LOWER_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, KC_BSLS
-#define _________________LOWER_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, KC_DQUO
+#define _________________LOWER_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, _______
 #define _________________LOWER_R3__________________        KC_AMPR, KC_QUES, KC_LT,   KC_GT,   KC_COLN
 
 
@@ -49,7 +49,7 @@
 #define _________________RAISE_L3__________________        ___________________BLANK___________________ // TODO: Prime real estate here.
 
 #define _________________RAISE_R1__________________        ________________NUMBER_RIGHT_______________
-#define _________________RAISE_R2__________________        ______________ARROWS______________, KC_QUOT
+#define _________________RAISE_R2__________________        ______________ARROWS______________, _______
 #define _________________RAISE_R3__________________        ___________________BLANK___________________ // TODO: Prime real estate here.
 
 
