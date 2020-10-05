@@ -59,7 +59,7 @@
 #define _________________ADJUST_L3_________________        _________________FUNC_RIGHT________________
 
 #define _________________ADJUST_R1_________________        RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD
-#define _________________ADJUST_R2_________________        _______, _______, _______, _______, _______ // TODO: Prime real estate here.
+#define _________________ADJUST_R2_________________        _______, _______, _______, _______, KC_CAPS // TODO: Prime real estate here.
 #define _________________ADJUST_R3_________________        _______, ______________MUSIC_______________
 
 
