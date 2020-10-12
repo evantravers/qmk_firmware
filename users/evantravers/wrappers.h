@@ -45,8 +45,8 @@
 
 
 #define _________________RAISE_L1__________________        ________________NUMBER_LEFT________________
-#define _________________RAISE_L2__________________        ___________________BLANK___________________ // TODO: Prime real estate here.
-#define _________________RAISE_L3__________________        ___________________BLANK___________________ // TODO: Prime real estate here.
+#define _________________RAISE_L2__________________        _______, KC_WH_U, KC_MS_U, KC_WH_D, _______ // TODO: Prime real estate here.
+#define _________________RAISE_L3__________________        KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1 // TODO: Prime real estate here.
 
 #define _________________RAISE_R1__________________        ________________NUMBER_RIGHT_______________
 #define _________________RAISE_R2__________________        ______________ARROWS______________, _______
