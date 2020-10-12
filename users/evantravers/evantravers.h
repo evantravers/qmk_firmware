@@ -45,10 +45,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LSHFT     LSFT_T(KC_TAB)
 #define RSHFT     RSFT_T(KC_COLON)
 
-enum {
+enum userspace_tapdances {
   TD_CTRL_ESC,
   TD_PREV_NEXT,
   TD_SCRNST
+};
+
+enum userspace_custom_keycodes {
+  ESC_F19 = SAFE_RANGE
 };
 
 /* Define layer names */
@@ -59,10 +63,3 @@ enum userspace_layers {
   _ADJUST,
   _SHORTCUTS
 };
-
-qk_tap_dance_action_t tap_dance_actions[] = {
-  [TD_CTRL_ESC]    = ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_ESC),
-  [TD_PREV_NEXT]   = ACTION_TAP_DANCE_DOUBLE(KC_MFFD, KC_MRWD),
-  [TD_SCRNST]      = ACTION_TAP_DANCE_DOUBLE(LGUI(LSFT(LCTL(KC_4))), LGUI(LSFT(KC_4)))
-};
-
