@@ -35,7 +35,7 @@
   LAYOUT_wrapper( \
       TAB_SK,   K01, K02, K03, K04, K05,                                K06, K07, K08, K09, K0A, KC_BSPC, \
       CTRL_ESC, K11, K12, K13, K14, K15,                                K16, K17, K18, K19, K1A, KC_QUOT, \
-      KC_F19,   K21, K22, K23, K24, K25, LOWER, KC_BSPC, KC_DEL, RAISE, K26, K27, K28, K29, K2A, SHORTCUTS, \
+      KC_F19,   K21, K22, K23, K24, K25, SYMBL, KC_BSPC, KC_DEL, CNTRL, K26, K27, K28, K29, K2A, SHORTCUTS, \
                 _______, KC_F19, ______LH_THUMBS______, ______RH_THUMBS______, KC_F19, _______ \
     )
 
@@ -48,16 +48,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _________________QWERTY_L2_________________, _________________QWERTY_R2_________________,
         _________________QWERTY_L3_________________, _________________QWERTY_R3_________________
     ),
-    [_LOWER] = LAYOUT_wrapper(
-        LEND_L1, _________________LOWER_L1__________________,                                       _________________LOWER_R1__________________, LEND_R1,
-        LEND_L2, _________________LOWER_L2__________________,                                       _________________LOWER_R2__________________, LEND_R2,
-        LEND_L3, _________________LOWER_L3__________________, _______, _______,   _______, _______, _________________LOWER_R3__________________, LEND_R3,
+    [_SYMBL] = LAYOUT_wrapper(
+        LEND_L1, _________________SYMBL_L1__________________,                                       _________________SYMBL_R1__________________, LEND_R1,
+        LEND_L2, _________________SYMBL_L2__________________,                                       _________________SYMBL_R2__________________, LEND_R2,
+        LEND_L3, _________________SYMBL_L3__________________, _______, _______,   _______, _______, _________________SYMBL_R3__________________, LEND_R3,
                                    _______, _______, _______, _______, _______,   _______, _______, _______, _______, _______
     ),
-    [_RAISE] = LAYOUT_wrapper(
-        REND_L1, _________________RAISE_L1__________________,                                       _________________RAISE_R1__________________, REND_R1,
-        REND_L2, _________________RAISE_L2__________________,                                       _________________RAISE_R2__________________, REND_R2,
-        REND_L3, _________________RAISE_L3__________________, _______, _______,   _______, _______, _________________RAISE_R3__________________, REND_R3,
+    [_CNTRL] = LAYOUT_wrapper(
+        REND_L1, _________________CNTRL_L1__________________,                                       _________________CNTRL_R1__________________, REND_R1,
+        REND_L2, _________________CNTRL_L2__________________,                                       _________________CNTRL_R2__________________, REND_R2,
+        REND_L3, _________________CNTRL_L3__________________, _______, _______,   _______, _______, _________________CNTRL_R3__________________, REND_R3,
                                    _______, _______, _______, _______, _______,   _______, _______, _______, _______, _______
     ),
     [_ADJUST] = LAYOUT_kyria_base_wrapper(
@@ -113,11 +113,11 @@ static void render_status(void) {
         case _QWERTY:
             oled_write_P(PSTR("Default\n"), false);
             break;
-        case _LOWER:
-            oled_write_P(PSTR("Lower\n"), false);
+        case _SYMBL:
+            oled_write_P(PSTR("Symbols\n"), false);
             break;
-        case _RAISE:
-            oled_write_P(PSTR("Raise\n"), false);
+        case _CNTRL:
+            oled_write_P(PSTR("Control\n"), false);
             break;
         case _ADJUST:
             oled_write_P(PSTR("Adjust\n"), false);
