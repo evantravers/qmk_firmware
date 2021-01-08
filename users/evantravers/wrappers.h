@@ -12,8 +12,8 @@
 #define LAYOUT_ortho_4x12_wrapper(...)       LAYOUT_ortho_4x12(__VA_ARGS__)
 
 
-#define ______LH_THUMBS______                              ESC_F19, LOWER, TAB_SK
-#define ______RH_THUMBS______                              KC_ENT, RAISE, KC_QUOT
+#define ______LH_THUMBS______                              ESC_F19, SYMBL, TAB_SK
+#define ______RH_THUMBS______                              KC_ENT, CNTRL, KC_QUOT
 #define ________________NUMBER_LEFT________________        KC_1,    KC_2,    KC_3,    KC_4,    KC_5
 #define ________________NUMBER_RIGHT_______________        KC_6,    KC_7,    KC_8,    KC_9,    KC_0
 #define _________________FUNC_LEFT_________________        KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5
@@ -34,23 +34,23 @@
 
 
 
-#define _________________LOWER_L1__________________        KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE
-#define _________________LOWER_L2__________________        KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV
-#define _________________LOWER_L3__________________        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
+#define _________________SYMBL_L1__________________        KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE
+#define _________________SYMBL_L2__________________        KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV
+#define _________________SYMBL_L3__________________        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
 
-#define _________________LOWER_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, _______
-#define _________________LOWER_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, KC_COLN
-#define _________________LOWER_R3__________________        KC_AMPR, KC_QUES, KC_LT,   KC_GT,   KC_BSLS
+#define _________________SYMBL_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, _______
+#define _________________SYMBL_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, KC_COLN
+#define _________________SYMBL_R3__________________        KC_AMPR, KC_QUES, KC_LT,   KC_GT,   KC_BSLS
 
 
 
-#define _________________RAISE_L1__________________        ________________NUMBER_LEFT________________
-#define _________________RAISE_L2__________________        ___________________BLANK___________________ // TODO: Prime real estate here.
-#define _________________RAISE_L3__________________        ___________________BLANK___________________ // TODO: Prime real estate here.
+#define _________________CNTRL_L1__________________        ________________NUMBER_LEFT________________
+#define _________________CNTRL_L2__________________        ___________________BLANK___________________ // TODO: Prime real estate here.
+#define _________________CNTRL_L3__________________        ___________________BLANK___________________ // TODO: Prime real estate here.
 
-#define _________________RAISE_R1__________________        ________________NUMBER_RIGHT_______________
-#define _________________RAISE_R2__________________        ______________ARROWS______________, _______
-#define _________________RAISE_R3__________________        ___________________BLANK___________________ // TODO: Prime real estate here.
+#define _________________CNTRL_R1__________________        ________________NUMBER_RIGHT_______________
+#define _________________CNTRL_R2__________________        ______________ARROWS______________, _______
+#define _________________CNTRL_R3__________________        ___________________BLANK___________________ // TODO: Prime real estate here.
 
 
 
