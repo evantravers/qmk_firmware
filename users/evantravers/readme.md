@@ -13,7 +13,11 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-This is intended to be a shared source of keymaps with the other keyboards,
-especially as I have both 4x12 and 5x12 ortho keyboards.
+![layout](3x5+3-using-mod-taps.png)
 
-I will be borrowing *heavily* from @drashna's excellent work.
+I borrow *heavily* from @drashna's excellent work on sharing keymaps across
+boards, and alot of @homerowmods and @manna-harbour's (miryoku) thinking on how
+to build a really small layout.
+
+I've written a fair amount about this journey at [my
+blog](http://evantravers.com/articles/tags/keyboards/).
