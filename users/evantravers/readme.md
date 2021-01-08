@@ -13,7 +13,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-![layout](3x5+3-using-mod-taps.png)
+![layout](/users/evantravers/3x5+3-using-mod-taps.png)
 
 I borrow *heavily* from @drashna's excellent work on sharing keymaps across
 boards, and alot of @homerowmods and @manna-harbour's (miryoku) thinking on how
