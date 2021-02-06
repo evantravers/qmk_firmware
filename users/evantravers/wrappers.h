@@ -38,7 +38,7 @@
 #define _________________SYMBL_L2__________________        KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV
 #define _________________SYMBL_L3__________________        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
 
-#define _________________SYMBL_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, _______
+#define _________________SYMBL_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, KC_CAPS
 #define _________________SYMBL_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, KC_COLN
 #define _________________SYMBL_R3__________________        KC_AMPR, KC_QUES, KC_LT,   KC_GT,   KC_BSLS
 
@@ -59,7 +59,7 @@
 #define _________________ADJUST_L3_________________        _________________FUNC_RIGHT________________
 
 #define _________________ADJUST_R1_________________        RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD
-#define _________________ADJUST_R2_________________        _______, _______, _______, _______, KC_CAPS // TODO: Prime real estate here.
+#define _________________ADJUST_R2_________________        _______, _______, _______, _______, _______ // TODO: Prime real estate here.
 #define _________________ADJUST_R3_________________        _______, ______________MUSIC_______________
 
 
