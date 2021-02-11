@@ -35,20 +35,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     QEND_L1, _________________QWERTY_L1_________________, _________________QWERTY_R1_________________, QEND_R1,
     QEND_L2, _________________QWERTY_L2_________________, _________________QWERTY_R2_________________, QEND_R2,
     QEND_L3, _________________QWERTY_L3_________________, _________________QWERTY_R3_________________, QEND_R3,
-    KC_F19,  KC_LCTL, KC_LALT, KC_LGUI, KC_RSFT, LOWER,   RAISE, KC_LSFT, KC_RGUI, KC_RALT, KC_RCTL,   SHORTCUTS
+    KC_F19,  KC_LCTL, KC_LALT, ______LH_THUMBS______,     ______RH_THUMBS______, KC_RALT, KC_RCTL,   SHORTCUTS
   ),
 
-  [_LOWER] = LAYOUT_ortho_4x12_wrapper(
-    LEND_L1, _________________LOWER_L1__________________, _________________LOWER_R1__________________, LEND_R1,
-    LEND_L2, _________________LOWER_L2__________________, _________________LOWER_R2__________________, LEND_R2,
-    LEND_L3, _________________LOWER_L3__________________, _________________LOWER_R3__________________, LEND_R3,
+  [_SYMBL] = LAYOUT_ortho_4x12_wrapper(
+    LEND_L1, _________________SYMBL_L1__________________, _________________SYMBL_R1__________________, LEND_R1,
+    LEND_L2, _________________SYMBL_L2__________________, _________________SYMBL_R2__________________, LEND_R2,
+    LEND_L3, _________________SYMBL_L3__________________, _________________SYMBL_R3__________________, LEND_R3,
     _______, _______, _______, _______, _______, _______, _______, _______, ______________MUSIC_______________
   ),
 
-  [_RAISE] = LAYOUT_ortho_4x12_wrapper(
-    REND_L1, _________________RAISE_L1__________________, _________________RAISE_R1__________________, REND_R1,
-    REND_L2, _________________RAISE_L2__________________, _________________RAISE_R2__________________, REND_R2,
-    REND_L3, _________________RAISE_L3__________________, _________________RAISE_R3__________________, REND_R3,
+  [_CNTRL] = LAYOUT_ortho_4x12_wrapper(
+    REND_L1, _________________CNTRL_L1__________________, _________________CNTRL_R1__________________, REND_R1,
+    REND_L2, _________________CNTRL_L2__________________, _________________CNTRL_R2__________________, REND_R2,
+    REND_L3, _________________CNTRL_L3__________________, _________________CNTRL_R3__________________, REND_R3,
     _______, _______, _______, _______, _______, _______, _______, _______, ______________MUSIC_______________
   ),
 
@@ -69,8 +69,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 bool music_mask_user(uint16_t keycode) {
   switch (keycode) {
-    case RAISE:
-    case LOWER:
+    case CNTRL:
+    case SYMBL:
       return false;
     default:
       return true;
