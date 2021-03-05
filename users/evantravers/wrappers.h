@@ -73,8 +73,8 @@
 #define _______________SHORTCUTS_L3________________        KC_SPC,  KC_ENT,  ZOOMOUT,TABP, HBCK
 
 #define _______________SHORTCUTS_R1________________        _______, KC_7, KC_8, KC_9, PASS
-#define _______________SHORTCUTS_R2________________        _______, KC_4, KC_5, KC_6, KC_TAB
-#define _______________SHORTCUTS_R3________________        KC_0,    KC_1, KC_2, KC_3, KC_DOT
+#define _______________SHORTCUTS_R2________________        KC_0,    KC_4, KC_5, KC_6, KC_TAB
+#define _______________SHORTCUTS_R3________________        _______, KC_1, KC_2, KC_3, KC_DOT
 
 #define QEND_L1 TAB_SK
 #define QEND_L2 CTRL_ESC
