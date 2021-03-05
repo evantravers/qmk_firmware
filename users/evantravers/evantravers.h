@@ -27,6 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SHORTCUTS MO(_SHORTCUTS)
 #define CTRL_ESC  TD(TD_CTRL_ESC)
 #define TAB_SK    LT(_SHORTCUTS, KC_TAB)
+#define QUOTE_SK  LT(_SHORTCUTS, KC_QUOT)
 #define ZOOMIN    LGUI(KC_PLUS)
 #define ZOOMOUT   LGUI(KC_MINS)
 #define TABN      LSFT(LGUI(KC_RBRC))
