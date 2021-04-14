@@ -68,7 +68,7 @@
 
 
 
-#define _______________SHORTCUTS_L1________________        KC_1,    KC_2,    KC_3,   KC_4, KC_5
+#define _______________SHORTCUTS_L1________________        KC_1,    KC_2,    KC_3,   KC_4, KC_5 // Do I really use these numbers?
 #define _______________SHORTCUTS_L2________________        SW_WIND, SCRNST,  ZOOMIN, TABN, HFWD
 #define _______________SHORTCUTS_L3________________        KC_SPC,  KC_ENT,  ZOOMOUT,TABP, HBCK
 
