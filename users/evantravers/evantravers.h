@@ -26,6 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CNTRL     LT(_CNTRL, KC_SPC)
 #define SHORTCUTS MO(_SHORTCUTS)
 #define CTRL_ESC  TD(TD_CTRL_ESC)
+#define SPC_MUTE  TD(TD_MUTE)
 #define TAB_SK    LT(_SHORTCUTS, KC_TAB)
 #define QUOTE_SK  LT(_SHORTCUTS, KC_QUOT)
 #define ZOOMIN    LGUI(KC_PLUS)
@@ -49,7 +50,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 enum userspace_tapdances {
   TD_CTRL_ESC,
   TD_PREV_NEXT,
-  TD_SCRNST
+  TD_SCRNST,
+  TD_MUTE
 };
 
 enum userspace_custom_keycodes {
