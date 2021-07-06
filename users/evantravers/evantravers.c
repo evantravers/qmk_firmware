@@ -24,7 +24,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_CTRL_ESC]    = ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_ESC),
   [TD_PREV_NEXT]   = ACTION_TAP_DANCE_DOUBLE(KC_MFFD, KC_MRWD),
   [TD_SCRNST]      = ACTION_TAP_DANCE_DOUBLE(LGUI(LSFT(LCTL(KC_4))), LGUI(LSFT(KC_4))),
-  [TD_MUTE]        = ACTION_TAP_DANCE_DOUBLE(KC_SPC, LGUI(LSFT(KC_M)))
+  [TD_MUTE]        = ACTION_TAP_DANCE_DOUBLE(LGUI(KC_GRV), LGUI(LSFT(KC_M)))
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
