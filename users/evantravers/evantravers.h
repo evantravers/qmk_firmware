@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CNTRL     LT(_CNTRL, KC_SPC)
 #define SHORTCUTS MO(_SHORTCUTS)
 #define CTRL_ESC  TD(TD_CTRL_ESC)
-#define SPC_MUTE  TD(TD_MUTE)
+#define SPC_MUTE
 #define TAB_SK    LT(_SHORTCUTS, KC_TAB)
 #define QUOTE_SK  LT(_SHORTCUTS, KC_QUOT)
 #define ZOOMIN    LGUI(KC_PLUS)
@@ -35,7 +35,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TABP      LSFT(LGUI(KC_LBRC))
 #define HBCK      LGUI(KC_LBRC)
 #define HFWD      LGUI(KC_RBRC)
-#define SW_WIND   LGUI(KC_GRV)
+#define WIN_MUTE  TD(TD_MUTE)
 #define SCRNST    TD(TD_SCRNST)
 #define PREV_NEXT TD(TD_PREV_NEXT)
 #define PASS      LGUI(KC_BSLS)
