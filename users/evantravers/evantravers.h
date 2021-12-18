@@ -39,6 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SCRNST    TD(TD_SCRNST)
 #define PREV_NEXT TD(TD_PREV_NEXT)
 #define PASS      LGUI(KC_BSLS)
+#define MUTE      LSFT(LGUI(KC_M))
 
 #define ALT_ESC   LALT_T(KC_ESC)
 #define ALT_ENT   RALT_T(KC_ENT)
