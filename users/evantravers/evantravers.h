@@ -65,5 +65,6 @@ enum userspace_layers {
   _SYMBL,
   _CNTRL,
   _ADJUST,
-  _SHORTCUTS
+  _SHORTCUTS,
+  _GAMING
 };
