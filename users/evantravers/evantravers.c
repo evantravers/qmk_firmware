@@ -16,6 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include "evantravers.h"
+#include "features/caps_word.h"
 
 uint32_t user_key_timer;
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record);
@@ -28,6 +29,8 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    if (!process_caps_word(keycode, record)) { return false; }
+
     switch (keycode) {
         case ESC_F19:
             if (record->event.pressed) {
