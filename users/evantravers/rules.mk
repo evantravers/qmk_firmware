@@ -1,4 +1,5 @@
 SRC += evantravers.c
+SRC += features/caps_word.c
 
 TAP_DANCE_ENABLE = yes
 
