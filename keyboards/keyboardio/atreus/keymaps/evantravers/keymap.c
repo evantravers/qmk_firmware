@@ -54,9 +54,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_GAMING] = LAYOUT_wrapper(
-    ________________NUMBER_LEFT________________,                   ________________NUMBER_RIGHT_______________,
-    KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,                      _______, _______, _______, _______, _______,
-    KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    _______, _______, _______, _______, _______, _______, _______,
-    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_SPC,  _______, _______, _______, _______, _______, _______, TO(_QWERTY) \
+    KC_1,    KC_2,    KC_3,    KC_4,    KC_T,                   ________________NUMBER_RIGHT_______________,
+    KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,                   _______, _______, _______, _______, _______,
+    KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_V,    KC_G, _______, _______, _______, _______, _______,
+    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_SPC,  KC_LALT, KC_N, _______, _______, _______, _______, TO(_QWERTY) \
   )
 };
