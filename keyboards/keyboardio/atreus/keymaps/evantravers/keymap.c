@@ -56,14 +56,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_GAMING] = LAYOUT_wrapper(
     ________________NUMBER_LEFT________________,                    ________________NUMBER_RIGHT_______________,
     TAB_ESC, KC_Q,    KC_W,    KC_E,    KC_R,                       _______, _______, _______, _______, _______,
-    KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,   MO(_GAMING2), KC_G, KC_ESC,  _______, _______, _______, _______,
-    KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_SPC, KC_LALT,      KC_N, KC_M,    _______, _______, _______, TO(_QWERTY) \
+    KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,   KC_LALT,      KC_G, KC_ESC,  _______, _______, _______, _______,
+    KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_SPC, MO(_GAMING2), KC_N, KC_M,    _______, _______, _______, TO(_QWERTY) \
   ),
 
   [_GAMING2] = LAYOUT_wrapper(
     ________________NUMBER_RIGHT_______________,                   _________________FUNC_LEFT_________________,
-    _______, KC_O,     KC_I, KC_U, KC_T,                          _________________FUNC_RIGHT________________,
-    _______, KC_L,     KC_K, KC_J, KC_G,        _______, _______, _______, _______, _______, _______, _______,
-    _______, _______, KC_N, KC_M, KC_B,         _______, _______, _______, _______, _______, _______, _______ \
+    _______, KC_O,    KC_I, KC_U, KC_T,                            _________________FUNC_RIGHT________________,
+    _______, KC_L,    KC_K, KC_J, KC_G,          KC_V,    _______, _______, _______, _______, _______, _______,
+    _______, _______, KC_N, KC_M, KC_B,          _______, _______, _______, _______, _______, _______, _______ \
   )
 };
