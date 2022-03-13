@@ -38,7 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define WIN_MUTE  TD(TD_MUTE)
 #define SCRNST    TD(TD_SCRNST)
 #define PREV_NEXT TD(TD_PREV_NEXT)
-#define ESC_TAB   TD(TD_ESC_TAB)
+#define TAB_ESC   TD(TD_TAB_ESC)
 #define PASS      LGUI(KC_BSLS)
 #define MUTE      LSFT(LGUI(KC_M))
 
@@ -54,7 +54,7 @@ enum userspace_tapdances {
   TD_PREV_NEXT,
   TD_SCRNST,
   TD_MUTE,
-  TD_ESC_TAB
+  TD_TAB_ESC
 };
 
 enum userspace_custom_keycodes {
