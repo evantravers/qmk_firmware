@@ -29,10 +29,26 @@ qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_MUTE]        = ACTION_TAP_DANCE_DOUBLE(LGUI(KC_GRV), LGUI(LSFT(KC_M)))
 };
 
+#ifdef AUDIO_ENABLE
+float gaming[][2] = SONG(AG_SWAP_SOUND);
+float qwerty[][2] = SONG(UNICODE_LINUX);
+#endif
+
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (!process_caps_word(keycode, record)) { return false; }
 
     switch (keycode) {
+        case TO(_GAMING):
+#ifdef AUDIO_ENABLE
+            PLAY_SONG (gaming);
+#endif
+        return true; break;
+        case TO(_QWERTY):
+#ifdef AUDIO_ENABLE
+            PLAY_SONG (qwerty);
+#endif
+        return true; break;
         case ESC_F19:
             if (record->event.pressed) {
                 user_key_timer = timer_read();
