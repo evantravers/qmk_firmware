@@ -18,23 +18,9 @@
 
 #include QMK_KEYBOARD_H
 #include "evantravers.h"
+#include "rev3.h"
 
-#define LAYOUT_ortho_5x12_wrapper(...)       LAYOUT_ortho_5x12(__VA_ARGS__)
-#define LAYOUT_ortho_5x12_base( \
-    K01, K02, K03, K04, K05, K06, K07, K08, K09, K0A, \
-    K11, K12, K13, K14, K15, K16, K17, K18, K19, K1A, \
-    K21, K22, K23, K24, K25, K26, K27, K28, K29, K2A,  \
-    K31, K32, K33, K34, K35, K36, K37, K38, K39, K3A  \
-  ) \
-  LAYOUT_ortho_5x12_wrapper( \
-    KC_GRV,   K01,     K02,     K03,      K04,     K05,     K06,     K07,     K08,     K09,     K0A,     KC_BSPC, \
-    TAB_SK,   K11,     K12,     K13,      K14,     K15,     K16,     K17,     K18,     K19,     K1A,     KC_BSPC, \
-    CTRL_ESC, K21,     K22,     K23,      K24,     K25,     K26,     K27,     K28,     K29,     K2A,     KC_QUOT, \
-    KC_LSFT,  K31,     K32,     K33,      K34,     K35,     K36,     K37,     K38,     K39,     K3A,     KC_SFTENT,  \
-    KC_F19,   KC_LCTL, KC_LALT, KC_LGUI,  SYMBL,   KC_SPC,  KC_SPC,  CNTRL,   KC_RGUI, KC_RALT, KC_RCTL, SHORTCUTS  \
-  )
-#define LAYOUT_base_wrapper(...)       LAYOUT_ortho_5x12_base(__VA_ARGS__)
-
+#define LAYOUT_preonic_2x2u_wrapper(...) LAYOUT_preonic_2x2u(__VA_ARGS__)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -51,12 +37,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * | Brite| Ctrl | Alt  | GUI  |SYMBL |    Space    |CNTRL | Left | Down |  Up  |Right |
  * `-----------------------------------------------------------------------------------'
  */
-[_QWERTY] = LAYOUT_ortho_5x12_wrapper(
-  KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
-  KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_DEL,
+[_QWERTY] = LAYOUT_preonic_2x2u(
+  KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
+  KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
   KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT,
-  ESC_F19, KC_LCTL, KC_LALT, KC_LGUI, SYMBL,   KC_SPC,  KC_SPC,  CNTRL,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_SFTENT,
+  ESC_F19, KC_LCTL, KC_LALT, KC_LGUI, SYMBL,   KC_SPC,  KC_SPC,  CNTRL, _______, _______
 ),
 
 /* SYMBL
@@ -72,12 +58,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
  * `-----------------------------------------------------------------------------------'
  */
-[_SYMBL] = LAYOUT_ortho_5x12_wrapper(
+[_SYMBL] = LAYOUT_preonic_2x2u_wrapper(
   KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC,
   KC_TILD, _________________SYMBL_L1__________________, _________________SYMBL_R1__________________, KC_DEL,
   KC_DEL,  _________________SYMBL_L2__________________, _________________SYMBL_R2__________________, KC_PIPE,
   _______, _________________SYMBL_L3__________________, _________________SYMBL_R3__________________, _______,
-  _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY
+  _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD
 ),
 
 /* CNTRL
@@ -93,12 +79,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
  * `-----------------------------------------------------------------------------------'
  */
-[_CNTRL] = LAYOUT_ortho_5x12_wrapper(
+[_CNTRL] = LAYOUT_preonic_2x2u_wrapper(
   KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
   KC_GRV,  _________________CNTRL_L1__________________, _________________CNTRL_R1__________________, KC_DEL,
   KC_DEL,  _________________CNTRL_L2__________________, _________________CNTRL_R2__________________, KC_BSLS,
   _______, _________________CNTRL_L3__________________, _________________CNTRL_R3__________________, _______,
-  _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY
+  _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD
 ),
 
 /* Adjust (SYMBL + CNTRL)
@@ -114,12 +100,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |      |      |      |      |      |             |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
  */
-[_ADJUST] = LAYOUT_ortho_5x12_wrapper(
+[_ADJUST] = LAYOUT_preonic_2x2u_wrapper(
   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
   _______, _________________ADJUST_L1_________________, _________________ADJUST_R1_________________, KC_DEL,
   _______, _________________ADJUST_L2_________________, _________________ADJUST_R2_________________, _______,
   _______, _________________ADJUST_L3_________________, _________________ADJUST_R3_________________, _______,
-  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
+  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 )
 };
 
