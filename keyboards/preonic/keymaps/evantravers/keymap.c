@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_GAMING] = LAYOUT_preonic_2x2u(
-  KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    TO(_QWERTY),
+  ESC_F19, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    TO(_QWERTY),
   KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
   KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_SFTENT,
@@ -46,11 +46,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_QWERTY] = LAYOUT_preonic_2x2u_wrapper(
-XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TO(_GAMING),
-_________________QWERTY_L1_________________, XXXXXXX, XXXXXXX, _________________QWERTY_R1_________________,
-_________________QWERTY_L2_________________, XXXXXXX, XXXXXXX, _________________QWERTY_R2_________________,
-_________________QWERTY_L3_________________, XXXXXXX, XXXXXXX, _________________QWERTY_R3_________________,
-XXXXXXX, XXXXXXX,              ______LH_THUMBS______, ______RH_THUMBS______,              XXXXXXX, XXXXXXX
+  ESC_F19, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    TO(_GAMING),
+  KC_TAB,  _________________QWERTY_L1_________________, _________________QWERTY_R1_________________, KC_BSPC,
+  KC_LCTL, _________________QWERTY_L2_________________, _________________QWERTY_R2_________________, KC_QUOT,
+  KC_LSFT, _________________QWERTY_L3_________________, _________________QWERTY_R3_________________, KC_SFTENT,
+  KC_LCTL, SYMBL,   KC_LGUI, ESC_F19,          SYMBL,   CNTRL,            KC_QUOT, KC_RGUI, CNTRL,   KC_RCTL
 ),
 
 [_SYMBL] = LAYOUT_preonic_2x2u_wrapper(
