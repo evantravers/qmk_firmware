@@ -64,10 +64,10 @@ enum userspace_custom_keycodes {
 /* Define layer names */
 enum userspace_layers {
   _QWERTY,
+  _GAMING,
   _SYMBL,
   _CNTRL,
   _ADJUST,
   _SHORTCUTS,
-  _GAMING,
   _GAMING2
 };
