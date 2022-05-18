@@ -50,6 +50,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             PLAY_SONG (qwerty);
 #endif
         return true; break;
+        case CAPS:
+            caps_word_set(true);
+        return false; break;
         case ESC_F19:
             if (record->event.pressed) {
                 user_key_timer = timer_read();
