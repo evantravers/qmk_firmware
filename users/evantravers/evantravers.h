@@ -60,8 +60,7 @@ enum userspace_tapdances {
 };
 
 enum userspace_custom_keycodes {
-  ESC_F19 = SAFE_RANGE,
-  CAPS
+  ESC_F19 = SAFE_RANGE
 };
 
 /* Define layer names */
