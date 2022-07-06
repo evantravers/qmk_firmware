@@ -16,10 +16,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include "evantravers.h"
-#include "features/caps_word.h"
 
 uint32_t user_key_timer;
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record);
 
 qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_CTRL_ESC]    = ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_ESC),
@@ -37,8 +35,6 @@ float qwerty[][2] = SONG(UNICODE_LINUX);
 
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    if (!process_caps_word(keycode, record)) { return false; }
-
     switch (keycode) {
         case TO(_GAMING):
 #ifdef AUDIO_ENABLE
@@ -50,16 +46,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             PLAY_SONG (qwerty);
 #endif
         return true; break;
-        case CAPS:
-            caps_word_set(true);
-        return false; break;
         case ESC_F19:
             if (record->event.pressed) {
                 user_key_timer = timer_read();
                 register_code(KC_F19);
             } else {
                 unregister_code(KC_F19);
-                if (timer_elapsed(user_key_timer) < get_tapping_term(keycode, record)) {
+                if (timer_elapsed(user_key_timer) < TAPPING_TERM) {
                     tap_code(KC_ESC);
                 }
             }
