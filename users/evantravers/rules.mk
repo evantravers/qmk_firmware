@@ -1,5 +1,4 @@
 SRC += evantravers.c
-SRC += features/caps_word.c
 
 TAP_DANCE_ENABLE = yes
 
@@ -15,5 +14,6 @@ EXTRAKEY_ENABLE  = yes # Audio control and System control(+450)
 CONSOLE_ENABLE   = no  # Console for debug(+400)
 COMMAND_ENABLE   = no  # Commands for debug and configuration
 MACROS_ENABLED   = no
+CAPS_WORD_ENABLE = yes
 
 DEBOUNCE_TYPE    = sym_eager_pk
