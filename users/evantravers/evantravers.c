@@ -40,10 +40,20 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #ifdef AUDIO_ENABLE
             PLAY_SONG (gaming);
 #endif
+#ifdef RGBLIGHT_ENABLE
+            rgblight_set_effect_range(0, 9);
+            rgblight_sethsv(HSV_RED);
+            rgblight_set();
+#endif
         return true; break;
         case TO(_QWERTY):
 #ifdef AUDIO_ENABLE
             PLAY_SONG (qwerty);
+#endif
+#ifdef RGBLIGHT_ENABLE
+            rgblight_set_effect_range(0, 9);
+            rgblight_sethsv(HSV_WHITE);
+            rgblight_set();
 #endif
         return true; break;
         case ESC_F19:
