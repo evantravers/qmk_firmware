@@ -18,7 +18,7 @@
 
 #include QMK_KEYBOARD_H
 #include "evantravers.h"
-#include "rev3.h"
+#include "rev3_drop.h"
 
 #define LAYOUT_preonic_2x2u_wrapper(...) LAYOUT_preonic_2x2u(__VA_ARGS__)
 
