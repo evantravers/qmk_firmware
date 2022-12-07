@@ -29,7 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SPC_MUTE
 #define TAB_SK    LT(_SHORTCUTS, KC_TAB)
 #define QUOTE_SK  LT(_SHORTCUTS, KC_QUOT)
-#define ZOOMIN    LGUI(KC_PLUS)
+#define ZOOMIN    LGUI(KC_EQL)
 #define ZOOMOUT   LGUI(KC_MINS)
 #define TABN      LSFT(LGUI(KC_RBRC))
 #define TABP      LSFT(LGUI(KC_LBRC))
