@@ -16,4 +16,4 @@ COMMAND_ENABLE   = no  # Commands for debug and configuration
 MACROS_ENABLED   = no
 CAPS_WORD_ENABLE = yes
 
-DEBOUNCE_TYPE    = sym_eager_pk
+DEBOUNCE_TYPE    = sym_eager_pr
