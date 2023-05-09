@@ -44,7 +44,7 @@
 #define _________________SYMBL_L2__________________        KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV
 #define _________________SYMBL_L3__________________        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
 
-#define _________________SYMBL_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, CAPS_WORD
+#define _________________SYMBL_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, CW_TOGG
 #define _________________SYMBL_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, KC_COLN
 #define _________________SYMBL_R3__________________        KC_AMPR, KC_QUES, KC_LT,   KC_GT,   KC_BSLS
 
@@ -60,7 +60,7 @@
 
 
 
-#define _________________ADJUST_L1_________________        RESET,   DEBUG,  RGB_TOG, RGB_MOD, RGB_HUI
+#define _________________ADJUST_L1_________________        QK_BOOT, DB_TOGG, RGB_TOG, RGB_MOD, RGB_HUI
 #define _________________ADJUST_L2_________________        _________________FUNC_LEFT_________________
 #define _________________ADJUST_L3_________________        _________________FUNC_RIGHT________________
 
