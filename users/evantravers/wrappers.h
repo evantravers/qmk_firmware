@@ -10,6 +10,7 @@
 #define KEYMAP_wrapper(...)                  LAYOUT(__VA_ARGS__)
 #define LAYOUT_wrapper(...)                  LAYOUT(__VA_ARGS__)
 #define LAYOUT_ortho_4x12_wrapper(...)       LAYOUT_ortho_4x12(__VA_ARGS__)
+#define LAYOUT_ortho_4x10_wrapper(...)       LAYOUT_ortho_4x10(__VA_ARGS__)
 
 
 #define ______LH_THUMBS______                              ESC_F19, SYMBL, TAB_SK
