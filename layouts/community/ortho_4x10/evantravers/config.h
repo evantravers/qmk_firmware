@@ -13,3 +13,5 @@
 #endif
 
 #define MIDI_BASIC
+
+#define USB_MAX_POWER = 100
