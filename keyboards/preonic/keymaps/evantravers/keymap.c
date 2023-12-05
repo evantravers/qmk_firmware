@@ -18,7 +18,7 @@
 
 #include QMK_KEYBOARD_H
 #include "evantravers.h"
-#include "rev3_drop.h"
+/* #include "rev3_drop.h" */
 
 #define LAYOUT_preonic_2x2u_wrapper(...) LAYOUT_preonic_2x2u(__VA_ARGS__)
 
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ESC_F19, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    TO(_QWERTY),
   TAB_SK,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
   KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_SFTENT,
+  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SC_SENT,
   KC_LCTL, KC_LGUI, SYMBL,   KC_LALT,          KC_SPC,  KC_SPC,           KC_RALT, CNTRL,   KC_RGUI, KC_RCTL
 ),
 
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ESC_F19, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    TO(_GAMING),
   TAB_SK,  _________________QWERTY_L1_________________, _________________QWERTY_R1_________________, KC_BSPC,
   KC_LCTL, _________________QWERTY_L2_________________, _________________QWERTY_R2_________________, KC_QUOT,
-  KC_LSFT, _________________QWERTY_L3_________________, _________________QWERTY_R3_________________, KC_SFTENT,
+  KC_LSFT, _________________QWERTY_L3_________________, _________________QWERTY_R3_________________, SC_SENT,
   KC_LCTL, KC_LGUI, SYMBL,  ESC_F19,           SYMBL,   CNTRL,            QUOTE_SK,CNTRL,   KC_RGUI, KC_RCTL
 ),
 
