@@ -75,3 +75,11 @@ bool music_mask_user(uint16_t keycode) {
       return true;
   }
 };
+
+/*https://github.com/winterNebs/qmk_firmware/blob/5d55f9b3ce3d57a65ee9860cd317f0d9001aa7e2/users/winternebs/winternebs.c#L25*/
+bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) {
+    if (layer_state_is(_QWERTY)) {
+        return true;
+    }
+    return false;
+}
