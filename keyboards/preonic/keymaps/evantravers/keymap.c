@@ -20,6 +20,15 @@
 #include "evantravers.h"
 /* #include "rev3_drop.h" */
 
+const uint16_t PROGMEM apos_combo[] = {RALT_T(KC_L), RGUI_T(KC_SCLN), COMBO_END};
+const uint16_t PROGMEM hyper_combo[] = {LGUI_T(KC_A), RGUI_T(KC_SCLN), COMBO_END};
+const uint16_t PROGMEM esc_combo[] = {KC_Q, KC_W, COMBO_END};
+combo_t key_combos[] = {
+    COMBO(apos_combo, KC_QUOT),
+    COMBO(hyper_combo, KC_F19),
+    COMBO(esc_combo, KC_ESC),
+};
+
 #define LAYOUT_preonic_2x2u_wrapper(...) LAYOUT_preonic_2x2u(__VA_ARGS__)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -87,3 +96,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
+
+/*https://github.com/winterNebs/qmk_firmware/blob/5d55f9b3ce3d57a65ee9860cd317f0d9001aa7e2/users/winternebs/winternebs.c#L25*/
+bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) {
+    if (layer_state_is(_QWERTY)) {
+        return true;
+    }
+    return false;
+}
