@@ -46,7 +46,7 @@
 #define _________________SYMBL_L3__________________        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
 
 #define _________________SYMBL_R1__________________        KC_CIRC, KC_UNDS, KC_PLUS, KC_SLSH, CW_TOGG
-#define _________________SYMBL_R2__________________        KC_SLSH, KC_MINS, KC_EQL,  KC_ASTR, KC_COLN
+#define _________________SYMBL_R2__________________        KC_DQUO, KC_MINS, KC_EQL,  KC_ASTR, KC_COLN
 #define _________________SYMBL_R3__________________        KC_AMPR, KC_QUES, KC_LT,   KC_GT,   KC_BSLS
 
 
